@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Condominio - Moradores</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        input[type=file]{
+        width: 37%;
+        height: 50%;
+        }
+
+        #listagem li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 35px;
+        }
+
+        #listagem li:hover {
+            background-color: aliceblue;
+            cursor: pointer;
+        }
+
+        #listagem li > img{
+        width: 250px;
+        }
+
+        #paginacao, #listagem {
+            text-align: center;
+        }
+
+        #paginacao li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 2px;
+            cursor: pointer;
+            padding: 1px;
+            min-height: 20px;
+            vertical-align: middle;
+        }
+
+        #paginacao li:hover {
+            color:blue;
+            font-weight: 300;
+            font-size: 1.1em;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-weight: bolder;">Condominio</h3>
+    </header>
+    <h3 style="font-weight: bolder;">Lista de moradores</h3>
+    <button type="button"><i>+</i> Cadastrar novo </button>
+    <ul id="listagem">
+        <li>
+            <img src="user.png" alt="perfil usuario"/>
+            <p> morador 1 </p>
+            <time>cadastrado em 16/04/2024</time>
+        </li>
+        <li>
+            <img src="user.png" alt="perfil usuario"/>
+            <p> morador 2 </p>
+            <time>cadastrado em 16/04/2024</time>
+        </li>
+        <li>
+            <img src="user.png" alt="perfil usuario"/>
+            <p> morador 3 </p>
+            <time>cadastrado em 16/04/2024</time>
+        </li>
+    </ul>
+  <ol id="paginacao">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+  </ol>
+  <footer>
+        <dl>
+                <dt>saiba mais</dt>
+                <dt>Faq</dt>
+                <dt>Contato</dt>
+        </dl>
+        <p>
+            copyright © 2024
+        </p>
+  </footer>
+</body>
+</html>
